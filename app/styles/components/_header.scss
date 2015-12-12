@@ -1,0 +1,41 @@
+header {
+  $size: 500px;
+  $top: 190px;
+
+  background-color: $light-green;
+  background: linear-gradient(to bottom, $light-green, $dark-green);
+  height: $size;
+  text-align: center;
+
+  .details {
+    display: inline-block;
+    padding-top: $top;
+    text-align: right;
+
+    h1, h3 {
+      color: $almost-white;
+    }
+
+    &__surname {
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+
+  }
+}
+
+
+@media (max-width: $screen-xs-max) {
+
+  .details {
+
+    h1 {
+      font-size: $big-font-size;
+    }
+
+    h3 {
+      font-size: $regular-font-size;
+    }
+
+  }
+}

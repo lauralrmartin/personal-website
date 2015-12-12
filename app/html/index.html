@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Laura LRM</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav__text"><a class="active" href="#home">Home</a></li>
+                <li class="nav__icon"><a class="active" href="#home"><i class="fa fa-home"></i></a></li>
+                <li class="nav__text"><a href="#about">About</a></li>
+                <li class="nav__icon"><a href="#about"><i class="fa fa-user"></i></a></li>
+                <li class="nav__text"><a href="#work">Work</a></li>
+                <li class="nav__icon"><a href="#work"><i class="fa fa-laptop"></i></a></li>
+                <li class="nav__text"><a href="#skills">Skills</a></li>
+                <li class="nav__icon"><a href="#skills"><i class="fa fa-pie-chart"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <div class="details">
+                <h1>Laura <span class="details__surname">Luis-Ravelo Martín</span></h1>
+                <h3>Front End Developer</h3>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <h1>About</h1>
+                <div class="clear">
+                    <p><img src="img/laura.jpg">Hey there, my name is Laura and I'm a computer engineer trying to make the web a better place!</p>
+                    <p>I try my best to learn, use all the tools available and follow good practices to make pixel perfect, responsive and blazing fast sites.</p>
+                    <p>You can take a look at some of my most recent works right here</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work">
+            <div class="container">
+                <h1>Work</h1>
+                <div class="timeline">
+                    <div class="timeline__moment timeline__hidden row">
+                        <div class="timeline__date timeline__date--left col-lg-6">
+                            <p>Soon</p>
+                        </div>
+                        <div class="timeline__content timeline__content--right col-lg-6">
+                            <div class="timeline__description">
+                                <h3>Your company?</h3>
+                                <p>Interested? Get in touch</p>
+                                <form id="timelineForm" class="timeline__form">
+                                    <div id="formFields" class="timeline__form-wrapper">
+                                        <input id="name" type="text" name="name" placeholder="Name*">
+                                        <span id="nameError"></span>
+                                        <input id="email" type="email" name="email" placeholder="Email*">
+                                        <span id="emailError"></span>
+                                        <input id="subject" type="text" name="subject" placeholder="Subject">
+                                        <span id="subjectError"></span>
+                                        <textarea id="message" name="smanessage" placeholder="Message*"></textarea>
+                                        <span id="messageError"></span>
+                                    </div>
+                                    <button id="formSubmit">Hire me!</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="timeline__circle timeline__circle--hire-me">
+                            <i class="fa fa-question"></i>
+                        </div>
+                    </div>
+                    <div class="timeline__moment timeline__hidden row">
+                        <div class="timeline__date col-lg-6 col-lg-push-6">
+                            <p>Sept 15</p>
+                        </div>
+                        <div class="timeline__content timeline__content--left col-lg-6 col-lg-pull-6">
+                            <div class="timeline__description">
+                                <h3>Merchant Portal</h3>
+                                <h5>Powa Technologies</h5>
+                                <p>The existing Merchant Portal app was very limited and not very user friendly. The new Meteor based app is an ongoing process and it's what I'm currently spending my time on.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__circle timeline__circle--merchant-portal">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="timeline__moment timeline__hidden row">
+                        <div class="timeline__date timeline__date--left col-lg-6">
+                            <p>Jul 15</p>
+                        </div>
+                        <div class="timeline__content timeline__content--right col-lg-6">
+                            <div class="timeline__description">
+                                <h3>Powatag.com</h3>
+                                <h5>Powa Technologies</h5>
+                                <p>The main product's page, Powatag, needed a complete rebuild as well, so we started from scratch using Angular.js. The site was finished and it's awaiting to be launched.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__circle timeline__circle--powatag">
+                            <i class="fa fa-group"></i>
+                        </div>
+                    </div>
+                    <div class="timeline__moment timeline__hidden row">
+                        <div class="timeline__date col-lg-6 col-lg-push-6">
+                            <p>Feb 15</p>
+                        </div>
+                        <div class="timeline__content timeline__content--left col-lg-6 col-lg-pull-6">
+                            <div class="timeline__description">
+                                <h3>Marketing campaigns</h3>
+                                <h5>Powa Technologies</h5>
+                                <p>Most of the work I did at Powa consisted on building new landing and campaign static pages for the different sections of the business and products. We made use of a gulp based toolkit to help us speed up the work.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__circle timeline__circle--marketing">
+                            <i class="fa fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="timeline__moment timeline__hidden row">
+                        <div class="timeline__date timeline__date--left col-lg-6">
+                            <p>Dec 14</p>
+                        </div>
+                        <div class="timeline__content timeline__content--right col-lg-6">
+                            <div class="timeline__description">
+                                <h3>Powa.com</h3>
+                                <h5>Powa Technologies</h5>
+                                <p>Working closely with the marketing team, we develop the new re-branded corporate site <a href="http://www.powa.com/" target="_blank">powa.com</a>.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__circle timeline__circle--powa">
+                            <i class="fa fa-sitemap"></i>
+                        </div>
+                    </div>
+                    <div class="timeline__moment timeline__hidden row">
+                        <div class="timeline__date col-lg-6 col-lg-push-6">
+                            <p>Oct 14</p>
+                        </div>
+                        <div class="timeline__content timeline__content--left col-lg-6 col-lg-pull-6">
+                            <div class="timeline__description">
+                                <h3>Bug Fixing</h3>
+                                <h5>Powa Technologies</h5>
+                                <p>At the very beginning of my employment at Powa Technologies I started fixing bugs in the e-commerce sites the company provides to their clients. This involved working with a custom built CMS and Freemarker templates.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__circle timeline__circle--bugs">
+                            <i class="fa fa-bug"></i>
+                        </div>
+                    </div>
+                    <div class="timeline__moment timeline__hidden row">
+                        <div class="timeline__date timeline__date--left col-lg-6">
+                            <p>2011 - 2013</p>
+                        </div>
+                        <div class="timeline__content timeline__content--right col-lg-6">
+                            <div class="timeline__description">
+                                <h3>Intern System Administrator</h3>
+                                <h5>University of La Laguna</h5>
+                                <p>I had the opportunity to work as an intern system administrator at my university (Universidad de la Laguna) for two years while I was studying for my MS Degree. I was responsible for a series of computers in one of the buildings, keeping them up to date and fully functional and I also had to attend user requests to print or helping them with the unknown Linux-based university operating system.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__circle timeline__circle--sys-admin">
+                            <i class="fa fa-terminal"></i>
+                        </div>
+                    </div>
+                    <div class="timeline__moment timeline__hidden row">
+                        <div class="timeline__date col-lg-6 col-lg-push-6">
+                            <p>Graduated 2013</p>
+                        </div>
+                        <div class="timeline__content timeline__content--left col-lg-6 col-lg-pull-6">
+                            <div class="timeline__description">
+                                <h3>Master of Computer Science</h3>
+                                <h5>University of La Laguna</h5>
+                                <p>In order to expand my coding knowledge and skills I decided to keep on and take this Master in the same university as before.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__circle timeline__circle--master">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="timeline__moment timeline__hidden row">
+                        <div class="timeline__date timeline__date--left col-lg-6">
+                            <p>Graduated 2011</p>
+                        </div>
+                        <div class="timeline__content timeline__content--right col-lg-6">
+                            <div class="timeline__description">
+                                <h3>Computer Science Degree</h3>
+                                <h5>University of La Laguna</h5>
+                                <p>Interested in technology and science I decided to study this degree at Universidad de la Laguna where I was first introduced to coding, programming languages, advanced mathematics and physics and computer architecture.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__circle timeline__circle--degree">
+                            <i class="fa fa-university"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h1>Skills</h1>
+                <div class="row chart-container">
+                    <div class="col-sm-4">
+                        <div class="chart" data-percent="95">
+                            HTML
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="chart" data-percent="80">
+                            CSS
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="chart" data-percent="70">
+                            JAVASCRIPT
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__name">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>jQuery</span>
+                    <span>SASS</span>
+                    <span>LESS</span>
+                    <span>FreeMarker</span>
+                    <span>Meteor</span>
+                    <span>Angular</span>
+                    <span>Gulp</span>
+                    <span>Grunt</span>
+                    <span>Bower</span>
+                    <span>Best Practices</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 footer__text">
+                    <span class="footer__author">Copyright &copy; 2015 - Laura Luis-Ravelo Martín <i class="fa fa-paw"></i></span>
+                </div>
+                <div class="col-sm-6 footer__social">
+                    <a target="_blank" href="http://uk.linkedin.com/pub/laura-luis-ravelo-martín/81/83/6a/en"><i class="fa fa-linkedin-square"></i></a>
+                    <a target="_blank" href="https://github.com/lauralrmartin"><i class="fa fa-github-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

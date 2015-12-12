@@ -1,0 +1,14 @@
+//-------------------------------//
+//  MAIN CSS
+//-----------------------------//
+
+@import "variables";
+@import "layout/layout";
+@import "components/header";
+@import "components/nav";
+@import "components/timeline";
+@import "font-awesome/font-awesome";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}

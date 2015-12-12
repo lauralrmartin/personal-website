@@ -1,0 +1,154 @@
+
+.about, .work, .skills {
+  > .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+
+
+
+//------------
+// - ABOUT
+//------------
+.about {
+  $image-size: 150px;
+
+  background-color: $almost-white;
+
+  img {
+    width: $image-size;
+    height: $image-size;
+    margin-right: 50px;
+    float: left;
+    border-radius: 5px;
+  }
+
+  p {
+    font-size: $regular-font-size;
+  }
+}
+
+
+//------------
+// - WORK
+//------------
+.work {
+  background-color: $light-blue;
+  overflow: hidden;
+
+  h1 {
+    color: $almost-white;
+  }
+}
+
+
+//------------
+// - SKILLS
+//------------
+.skills {
+  background-color: $dark-purple;
+
+  h1 {
+    color: $almost-white;
+  }
+
+  &__name {
+    padding: 20px 0;
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    span {
+      background-color: $light-purple;
+      color: $almost-white;
+      font-weight: bolder;
+      letter-spacing: 1.5px;
+      padding: 10px 15px;
+      border-radius: 4px;
+      margin-right: 5px;
+      line-height: 50px;
+      transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: $almost-white;
+        color: $light-purple;
+      }
+    }
+  }
+
+  .chart-container {
+    padding: 20px 0;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .chart {
+    $chart-size: 150px;
+    position: relative;
+    height: $chart-size;
+    width: $chart-size;
+    line-height: $chart-size;
+    text-align: center;
+    color: $almost-white;
+    font-weight: 900;
+    margin: 20px auto;
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+  }
+}
+
+.footer {
+
+  line-height: 40px;
+  padding: 20px 0;
+
+  &__social {
+    text-align: right;
+  }
+
+  &__author {
+    font-size: $smaller-font-size;
+  }
+
+  a {
+    font-size: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 2px;
+    color: $default-font-color;
+
+    &:hover {
+      color: lighten($default-font-color, 15%);
+    }
+  }
+}
+
+
+//-------------------
+// - MEDIA QUERIES
+//------------------
+@media (max-width: $screen-xs-max) {
+
+  .about {
+
+    img {
+      margin-right: 20px;
+    }
+
+    p {
+      font-size: $small-font-size;
+    }
+  }
+
+  .footer {
+    &__social, &__text {
+      text-align: center;
+    }
+  }
+}

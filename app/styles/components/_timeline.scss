@@ -1,0 +1,279 @@
+
+.timeline {
+
+  $circle-size: 50px;
+
+  position: relative;
+
+  &__hidden {
+    opacity: 0;
+  }
+
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: darken($light-blue, 10%);
+    left: 50%;
+    top: 0;
+    margin-left: -2px;
+  }
+
+  &__moment {
+    position: relative;
+  }
+
+  &__content{
+    padding: 20px;
+
+    &--left {
+      padding-right: 50px;
+
+      .timeline__description {
+
+        &:after, &:before {
+          left: 100%;
+        }
+
+        &:after {
+          border-left-color: $almost-white;
+        }
+        &:before {
+          border-left-color: #e0e0e0;
+        }
+
+      }
+
+    }
+
+    &--right {
+      padding-left: 50px;
+
+      .timeline__description {
+
+        &:after, &:before {
+          right: 100%;
+        }
+
+        &:after {
+          border-right-color: $almost-white;
+        }
+        &:before {
+          border-right-color: #e0e0e0;
+        }
+
+      }
+
+    }
+  }
+
+  &__description {
+    position: relative;
+    background-color: $almost-white;
+    border: 1px solid #e0e0e0;
+    @include google_card(2);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+
+    &:after, &:before {
+      top: 30px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:after {
+      border-color: rgba(136, 183, 213, 0);
+      border-width: 10px;
+      margin-top: -10px;
+    }
+    &:before {
+      border-color: rgba(194, 225, 245, 0);
+      border-width: 11px;
+      margin-top: -11px;
+    }
+
+    .timeline__form {
+      padding: 0 40px;
+      text-align: center;
+
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+      }
+
+      button {
+        padding: 10px;
+        width: 120px;
+        margin: 20px 0 30px 0;
+        background-color: $light-blue;
+        border-radius: 4px;
+        border-color: darken($light-blue, 15%);
+        border-style: solid;
+        border-width: 0 0 3px 0;
+        color: $almost-white;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+          background-color: darken($light-blue, 15%);
+          border-color: $light-blue;
+        }
+      }
+
+    }
+  }
+
+  .timeline__form-wrapper {
+    display: none;
+  }
+
+  &__circle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: $circle-size;
+    margin-left: -$circle-size / 2;
+    margin-top: $circle-size / 2;
+    background: $grey;
+    border: 2px solid $almost-white;
+    border-radius: 50%;
+    width: $circle-size;
+    text-align: center;
+    line-height: $circle-size;
+
+    &--hire-me {
+      background-color: $dark-purple;
+    }
+
+    &--merchant-portal {
+      background-color: $orange;
+    }
+
+    &--powatag {
+      background-color: $light-green;
+    }
+
+    &--marketing {
+      background-color: $pink;
+    }
+
+    &--powa {
+      background-color: $dark-blue;
+    }
+
+    &--bugs {
+      background-color: $brown;
+    }
+
+    &--sys-admin {
+      background-color: $yellow;
+    }
+
+    &--master {
+      background-color: $dark-green;
+    }
+
+    &--degree {
+      background-color: $red;
+    }
+
+    i {
+      font-size: $small-font-size;
+      color: $almost-white;
+    }
+  }
+
+  &__date {
+    padding-top: $circle-size / 2;
+    padding-left: $circle-size;
+    padding-right: $circle-size;
+
+    p {
+      margin: 0;
+      line-height: $circle-size;
+      color: $almost-white;
+      font-weight: 700;
+    }
+
+    &--left {
+      p {
+        text-align: right;
+      }
+    }
+
+  }
+
+}
+
+//Media queries
+
+@media (max-width: $screen-md-max) {
+  .timeline {
+
+    $circle-size: 50px;
+
+    &:before {
+      left: 30px;
+    }
+
+    &__circle {
+      top: 20px;
+      left: 45px;
+    }
+
+    &__content{
+      padding: 20px 20px 20px 100px;
+
+      &--left {
+        p {
+          text-align: left;
+        }
+
+        .timeline__description {
+
+          &:after, &:before {
+            left: auto;
+            right: 100%;
+          }
+
+          &:after {
+            border-left-color: transparent;
+            border-right-color: $almost-white;
+          }
+          &:before {
+            border-left-color: transparent;
+            border-right-color: #e0e0e0;
+          }
+        }
+
+      }
+
+    }
+
+    &__date {
+      padding-top: $circle-size / 2;
+      padding-right: 0;
+      padding-left: 100px;
+
+      p {
+        margin: 0;
+        line-height: 0;
+      }
+
+      &--left {
+        p {
+          text-align: left;
+        }
+
+      }
+
+    }
+
+  }
+}
